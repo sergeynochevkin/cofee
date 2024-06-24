@@ -1,0 +1,52 @@
+.Container
+    width: 25%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    font-size: 32px
+    filter: grayscale(1)
+    border-right: solid 1px #DCDCDC
+    border-left: solid 1px #DCDCDC
+    &:last-child
+        border-right: unset
+    &:first-child
+        border-left: unset
+
+.Name
+    width: 100%
+    text-align: center
+    height: 82px
+
+.ContainerNext
+    @extend .Container
+    border-radius: 30px
+
+.ContainerSelected
+    @extend .Container
+    filter: unset
+    background-color: #FFFFFF
+
+.ColoredCircle
+    width: 161px
+    height: 161px
+    border-radius: 50%
+    position: absolute
+    background-color: #EFCCB9
+    z-index: 0
+
+.ColoredCircleTea
+    @extend .ColoredCircle
+    background-color: #C9EA94
+
+.ColoredCircleShakes
+    @extend .ColoredCircle
+    background-color: #F9ECD2
+
+.ColoredCircleDrinks
+    @extend .ColoredCircle
+    background-color: #FFE665
+
+.Image
+    z-index: 1
